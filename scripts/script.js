@@ -37,7 +37,26 @@ user.addEventListener("click", () => {
 // Carrito de Compras
 
 
+//FETCH
 
+const form = document.querySelector(".buscador-input");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.querySelector("");
+    f
+    etch(JSON_POST, {
+        method: 'POST',
+        body: JSON.stringify({
+        email: email.value,
+        }),
+        headers: {'Content-type': 'application/json; charset=UTF-8'}
+    })
+    .then(resultado => resultado.json())
+    .then(respuesta => {
+        alert(`El correo ${respuesta.email} fue registrado en el sistema`);
+    });
+});
 
 
 
