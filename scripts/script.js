@@ -39,24 +39,37 @@ user.addEventListener("click", () => {
 
 //FETCH
 
-const form = document.querySelector(".buscador-input");
+const d = document;
 
-form.addEventListener("submit", (e) => {
+const form = d.getElementById("formulario");
+
+const buscador = d.getElementById('buscador-input');
+
+buscador.addEventListener('keyup', (e) => {
+    if (e.code === 'Enter') {
+        e.preventDefault();
+        form.submit();
+    }
+});
+
+form.addEventListener("submit", async e => {
     e.preventDefault();
-    const email = document.querySelector("");
-    f
-    etch(JSON_POST, {
+
+    const text = e.target.text.value;
+    Fetch( {
         method: 'POST',
         body: JSON.stringify({
-        email: email.value,
+            text: text,
         }),
-        headers: {'Content-type': 'application/json; charset=UTF-8'}
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+        }
     })
     .then(resultado => resultado.json())
     .then(respuesta => {
-        alert(`El correo ${respuesta.email} fue registrado en el sistema`);
+        ;
     });
-});
+    
 
 
 
