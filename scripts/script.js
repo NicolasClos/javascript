@@ -1,4 +1,4 @@
-// Buscador
+// BUSCADOR
 
 const iconoBuscador = document.querySelector(".fa-search");
 
@@ -17,7 +17,7 @@ formulario.addEventListener("submit", (e) => {
 })
 
 
-// Usuario
+// USUARIO
 
 let user = document.querySelector(".fa-user");
 
@@ -31,26 +31,31 @@ user.addEventListener("click", () => {
 })
 
 
-// Favoritos
+// LISTADO DE PRODUCTOS - LO MÁS VENDIDO
 
+window.addEventListener('load', function () {
+    new Glider(document.querySelector('.carouselItems'), {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: {
+            prev: '.btnCarouselAnterior',
+            next: '.btnCarouselSiguiente'
+        },
+        responsive: [{
+            // screens greater than >= 775px
+            breakpoint: 450,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 2,
+            }
+        }, {
+            // screens greater than >= 1024px
+            breakpoint: 1024,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 4,
+            }
+        }]
+    });
+});
 
-// Carrito de Compras
-
-
-
-
-
-
-// Smooth Scrolling
-/*
-$(document).ready(function(){
-    const Desplazar = $(".desplazar");
-
-    Desplazar.click(function(e){
-        e.preventDefault();
-        $("body", "html").animate({
-            scrollTop: $(this.hash).offset().top,
-        }, 1000);
-    })
-})
-*/
