@@ -59,3 +59,17 @@ window.addEventListener('load', function () {
     });
 });
 
+// FAVORITOS
+
+const d = document;
+
+const favTrue = d.querySelector('.fa-heart');
+
+const favFalse = d.querySelector('.fa-heart-o');
+
+const fav = d.querySelector('.productoFav');
+
+fav.addEventListener('click', ()=>{
+    favTrue.classList.toggle('d-none')
+});
+

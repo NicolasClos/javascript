@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -193,6 +193,14 @@
 }
 
 /* Lo más vendido */
+
+.lomasvendido-titulo{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+}
+
 /* GLIDER */
 
 .carousel-2{
@@ -206,12 +214,12 @@
 
 .carouselItems{
     overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 .carouselItem{
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .producto{
@@ -237,25 +245,71 @@
 }
 
 .productoFav{
-    width: 15%;
-    height: 20%;
-    background-color:#ddd;
+    width: 45px;
+    height: 45px;
+    background-color:#eee;
     position: absolute;
     top: 0;
     right: 0;
     border-radius:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s;
+    margin: 5px 5px 0px 0;
+}
+
+.fa-heart-o{
+    font-size: 22px;
+    transition: font-size 0.1s;
+}
+
+.fa-heart{
+    font-size: 22px;
+    transition: font-size 0.1s;
+}
+
+.productoFav:hover{
+    background-color:rgb(243, 243, 243);
+}
+
+.productoFav:hover .fa-heart-o{
+    font-size: 24px;
+}
+
+.productoFav:hover .fa-heart{
+    font-size: 24px;
 }
 
 .productoZoom{
-    width: 15%;
-    height: 20%;
-    background-color:#ddd;
+    width: 45px;
+    height: 45px;
+    background-color:#eee;
     position: absolute;
     bottom: 0;
     right: 0;
     border-radius:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    margin: 0 5px 5px 0;
 }
 
+.fa-expand{
+    font-size: 22px;
+    transition: font-size 0.1s;
+}
+
+.productoZoom:hover{
+    background-color:rgb(243, 243, 243);
+}
+
+.productoZoom:hover .fa-expand{
+    font-size: 24px;
+}
 
 .productoNombre{
     font-size: 16px;
