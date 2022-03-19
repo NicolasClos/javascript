@@ -59,6 +59,34 @@ window.addEventListener('load', function () {
     });
 });
 
+// LISTADO DE RECOMENDADO PARA VOS
+
+window.addEventListener('load', function () {
+    new Glider(document.querySelector('.carouselItems3'), {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: {
+            prev: '.btnCarouselAnterior3',
+            next: '.btnCarouselSiguiente3'
+        },
+        responsive: [{
+            // screens greater than >= 775px
+            breakpoint: 450,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 2,
+            }
+        }, {
+            // screens greater than >= 1024px
+            breakpoint: 1024,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 4,
+            }
+        }]
+    });
+});
+
 // FAVORITOS
 
 const d = document;
