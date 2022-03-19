@@ -63,13 +63,45 @@ window.addEventListener('load', function () {
 
 const d = document;
 
-const favTrue = d.querySelector('.fa-heart');
+const favTrue = d.querySelectorAll('.corazonLleno');
 
-const favFalse = d.querySelector('.fa-heart-o');
+const favFalse = d.querySelectorAll('.fa-heart-o');
 
-const fav = d.querySelector('.productoFav');
+const fav = d.querySelectorAll('.productoFav');
 
-fav.addEventListener('click', ()=>{
-    favTrue.classList.toggle('d-none')
-});
-
+for (let i = 0; i <= 7; i++) {
+    fav[i].addEventListener('click', () => {
+        favTrue[i].classList.toggle('d-none');
+        if(favTrue[i].classList.contains('d-none')){
+            Toastify({
+                text: "Se ha eliminado de favoritos",
+                duration: 1000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "center",
+                stopOnFocus: false,
+                style: {
+                    marginTop: "30px",
+                    borderRadius: "20px",
+                    background: "linear-gradient(90deg, rgba(59,71,113,0.8) 0%, rgba(26,37,48,0.8) 100%)",
+                },
+            }).showToast();
+        } else{
+            Toastify({
+                text: "Se ha añadido a favoritos",
+                duration: 1000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "center",
+                stopOnFocus: false,
+                style: {
+                    marginTop: "30px",
+                    borderRadius: "20px",
+                    background: "linear-gradient(90deg, rgba(59,71,113,0.8) 0%, rgba(26,37,48,0.8) 100%)",
+                },
+            }).showToast();
+        }
+    });
+};
