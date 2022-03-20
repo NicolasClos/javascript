@@ -205,6 +205,10 @@
 
 /* SECTION - Lo más vendido */
 
+.lomasvendido{
+    margin-top: 80px;
+}
+
 .lomasvendido-titulo{
     width: 80%;
     margin: auto;
@@ -387,6 +391,10 @@
 
 /* SECTION - Recomendado para vos*/
 
+.sectionRecomendado{
+    margin-top: 80px;
+}
+
 .recomendadoTitulo{
     width: 80%;
     margin: auto;
@@ -456,8 +464,8 @@
 .suscribirseContainer{
     width: 80%;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     height: fit-content;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -503,5 +511,188 @@
     border: none;
     color: #fff;
     height: 32px
+}
+
+/* SECTION - Marcas */
+
+.sectionMarcas{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.MarcasTitulo{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+}
+
+/* GLIDER - Marcas */
+
+.carousel-4{
+    width: 80%;
+    margin: auto;
+}
+
+.carouselItems4{
+    overflow: hidden;
+    box-shadow: none!important;
+    border-radius: 10px;
+}
+
+.productoMarcas{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.productoMarcasImagen img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carouselItems4{
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#btn4{
+    font-size: 18px;
+}
+
+.btnCarouselAnterior4{
+    padding-right: 10px;
+    position: absolute;
+    display: block;
+    width:30px;
+    height: 100%;
+    border: none;
+    top: 0;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    left: -30px;
+    background: none;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.productoMarcasImagen{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.btnCarouselSiguiente4{
+    padding-left: 10px;
+    position: absolute;
+    display: block;
+    width:30px;
+    height: 100%;
+    border: none;
+    top: 0;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    right: -30px;
+    background: none;
+    color: rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.btnCarouselAnterior4:hover{
+    color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.15);
+}
+
+.btnCarouselSiguiente4:hover{
+    color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.15);
+}
+
+/* FOOTER - Footer*/
+
+.footer{
+    background-color: #ddd;
+}
+
+.footerContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.footerItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerItemTitle{
+    padding: 5px;
+}
+
+.footerItem-a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.footerItem-a:hover{
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.footerItem-p{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+/* FOOTER - Copyright*/
+
+.copyright{
+    background-color: #ddd;
+}
+
+.copyrightContainer{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.copyrightLogo{
+    padding: 20px;
+}
+
+.copyrightLogo a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    height: fit-content;
+    width: 300px;
+
+}
+
+.copyrightLogo a span {
+    color: var(--color-secundario);
+}
+
+.copyrightText{
+    padding: 20px;
 }
 

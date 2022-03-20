@@ -59,7 +59,7 @@ window.addEventListener('load', function () {
     });
 });
 
-// LISTADO DE RECOMENDADO PARA VOS
+// LISTADO DE PRODUCTOS - RECOMENDADO PARA VOS
 
 window.addEventListener('load', function () {
     new Glider(document.querySelector('.carouselItems3'), {
@@ -82,6 +82,38 @@ window.addEventListener('load', function () {
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 4,
+            }
+        }]
+    });
+});
+
+
+// LISTADO DE MARCAS
+
+
+// LISTADO DE RECOMENDADO PARA VOS
+
+window.addEventListener('load', function () {
+    new Glider(document.querySelector('.carouselItems4'), {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: {
+            prev: '.btnCarouselAnterior4',
+            next: '.btnCarouselSiguiente4'
+        },
+        responsive: [{
+            // screens greater than >= 775px
+            breakpoint: 450,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 2,
+            }
+        }, {
+            // screens greater than >= 1024px
+            breakpoint: 1024,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 6,
             }
         }]
     });
