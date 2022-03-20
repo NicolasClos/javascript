@@ -5,7 +5,7 @@ const iconoBuscador = document.querySelector(".fa-search");
 const barraBuscador = document.querySelector(".buscador-input")
 
 iconoBuscador.addEventListener("click", () => {
-    barraBuscador.classList.toggle("displayn");
+    barraBuscador.classList.toggle("d-none");
     iconoBuscador.classList.toggle("size")
 })
 
@@ -87,11 +87,7 @@ window.addEventListener('load', function () {
     });
 });
 
-
 // LISTADO DE MARCAS
-
-
-// LISTADO DE RECOMENDADO PARA VOS
 
 window.addEventListener('load', function () {
     new Glider(document.querySelector('.carouselItems4'), {
